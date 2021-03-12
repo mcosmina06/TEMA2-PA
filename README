@@ -1,0 +1,17 @@
+Mandru Cosmina
+323CB
+									Tema 2 - PA
+
+	1. Cat timp pe parcurul parcurgerii DFS pot ajunge intr - unul dintre nodurile
+	in care se afla lorzii, blochez pe rand nodurile din permutare si retin numarul
+	intr - un contor. In momentul in care parcurgerea DFS ce porneste mereu din nodul
+	1, unde se afla Robin, nu este intrerupta inseamna ca s - au inchis suficiente 
+	noduri.(O(n*m)).
+	
+	2. Pentru rezolvare am pornit de la algoritmul Bellman-Ford doar ca am utilizat
+	o coada in care se vor pastra acele noduri care au fost deja relaxate pentru a 
+	obtine un timp mai bun.(ϴ(n*(m^2)).
+
+	3. Apelez algoritmul dijkstra ce returneaza vectorul de parinti a caii minime gasite
+	in functie de costurile ce se afla pe muchii. Cu ajutorul parintilor construiesc
+	calea gasita si calculez efortul ramas dupa formula data. O(n^2).
